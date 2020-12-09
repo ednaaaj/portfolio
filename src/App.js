@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from './components/Hero'
+import AboutMe from './components/AboutMe'
+import { BrowserRouter as Router } from "react-router-dom";
+import { Navigation, Route, glide } from "react-tiger-transition"
+
+import "react-tiger-transition/styles/main.min.css";
+
+glide({
+  name: 'glide-left',
+  direction: 'left'
+});
+
+glide({
+  name: 'glide-right',
+  direction: 'right'
+});
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigation>
+        <Route exact path="/" screen>
+          <Hero />
+        </Route>
+        <Route exact path="/about" screen>
+          <AboutMe />
+        </Route>
+      </Navigation>
+    </Router>
   );
 }
 

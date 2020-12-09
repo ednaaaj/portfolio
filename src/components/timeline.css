@@ -1,0 +1,107 @@
+
+/* #691FFF [rimary */
+/* #111D4A secondary */
+
+
+.timeline-container {
+    background-color: #EBEBED;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.timeline {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.card-sub-title {
+    color:#111D4A !important;
+}
+
+.card-description p {
+    font-weight: bolder !important;
+   
+}
+
+.timeline-controls button {
+    color:#111D4A !important;
+}
+
+.timeline-container h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 6rem;
+    color: #111D4A ;
+    animation: animateFromTop 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: 100px;
+}
+
+.timeline-container .wave {
+    width: 100% !important;
+    height: 25vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .timeline-container h2 {
+        font-size: 3rem;
+    }
+
+    .timeline-container .wave {
+        width: 100% !important;
+        height: 10vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .project-container {
+        
+        margin-bottom: 50px;
+    }
+
+    .timeline-container div[aria-label="animation"]{
+        width: 25rem !important;
+        height: 25rem !important;
+
+    }
+
+    
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+    .timeline-container div[aria-label="animation"]{
+        width: 20rem !important;
+        height: 20rem !important;
+
+    }
+
+    
+
+}
+
+
+

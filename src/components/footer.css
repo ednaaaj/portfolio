@@ -1,0 +1,47 @@
+.footer {
+
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.footer .made {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+    
+}
+
+.footer .wave {
+    position: relative;
+    height: 25vh;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .footer .wave {
+        height: 10rem;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .wave {
+        height: 6rem;
+    }
+    .footer .made {
+        font-size: 0.7rem;
+        font-weight: 500;
+        transform: translate(-40%, 0%);
+        
+    }
+}

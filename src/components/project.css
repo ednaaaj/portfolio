@@ -1,0 +1,83 @@
+/* #691FFF [rimary */
+/* #111D4A secondary */
+
+.project-container {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.project-container h6{
+    display: inline !important;
+    margin-right: 10px;
+}   
+
+.project-container a {
+    display: inline-block;
+}
+
+.project-container a i{
+    display: inline;
+}
+
+.project-container h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* textAlign: "center",
+color: "#691FFF",
+border: "0.12rem solid #691FFF",
+padding: "0px 10px 0px 10px",
+display: "inline-block",
+marginRight: "20px",
+fontSize: "0.8rem" */
+
+.project-container .language-tag {
+    text-align: center;
+    color: #691FFF;
+    border: 0.12rem solid #691FFF;
+    padding: 0px 10px 0px 10px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.8rem;
+    transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    cursor: default;
+    margin-top: 10px;
+
+}
+
+.project-container .language-tag:hover {
+    color: white !important;
+    background-color: #691FFF ;
+}
+
+.project-container a i {
+    color: #691FFF;
+
+}
+.project-container a {
+    text-decoration: none;
+    transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.project-container a:hover{
+    text-decoration: none;
+    transform: translateX(10px);
+  
+}
+
+
+.project-container .description {
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .project-container {
+        margin-bottom: 10px;
+    }
+
+  
+    
+}

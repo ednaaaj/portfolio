@@ -1,0 +1,230 @@
+/* #691FFF [rimary */
+/*  secondary */
+
+.aboutme-container {
+    background-color: white;
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;    
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.aboutme-container .avatar-container {
+    width: 100%;
+    height: auto;
+}
+
+.aboutme-container h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 6rem;
+    color: #691FFF;
+    animation: animateFromTop 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.aboutme-container p {
+    font-weight: 100;
+    animation: animateFromRight 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+.aboutme-container .emailMe {
+    font-size: 1rem;
+    color: #691FFF;
+}
+.aboutme-container .emailMe a{
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: #691FFF;
+    margin-left: 2px;
+  
+}
+.aboutme-container .emailMe a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both !important;
+    transform: translate3d(0, 0, 0) !important;
+
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .aboutme-container .emailMe a::after{
+    content: "";
+    width: 105%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    border: 1px solid #691FFF;
+    margin-top: 5px;
+}
+
+.socialmedia-list li {
+    display: inline-block;
+}
+.socialmedia-list li a {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+
+.aboutme-container p, ul, li {
+    font-family: 'Roboto';
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+.aboutme-container ul {
+    font-weight: 100;
+    animation: animateFromRight 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.aboutme-container ul li {
+    list-style: none;
+}
+
+
+
+@keyframes animateFromTop {
+    0% {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.aboutme-container .moveToRight {
+    width: 60px;
+    height: 60px;
+    border: 2px #691FFF solid;
+    border-radius: 50%;
+    margin-right: 40px;
+    animation: pulse 1s infinite;
+    position: absolute;
+    top: 50%;
+    animation: pulseLeft 1s infinite ease-in-out, rightArrowFromRight 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+    left: 5px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.aboutme-container .moveToRight:hover {
+    color: #3600A3 ;
+    border: 2.4px #3600A3 solid;
+    font-size: 1.3rem;
+}
+
+
+@keyframes pulseLeft {
+    0%   { transform: translateX(5px); }
+    50%  { transform: translateX(20px); }
+    100% { transform: translateX(5px); }
+}
+
+.aboutme-container img:first-child{
+    z-index: 4;
+    position: absolute;
+    animation: animateFromLeft 1s ease-in-out;
+}
+
+#blobAboutMe {
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0.5;
+    animation: animateFromLeftBlob 0.5s ease-in-out;
+}
+
+@keyframes animateFromLeftBlob {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 0.5;
+    }
+
+}
+
+
+.aboutme-container i {
+    margin-right: 10px;
+    color: #691FFF ;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .aboutme-container {
+        padding-bottom: 50px;
+    }
+    .aboutme-container h1 {
+        font-size: 3.5rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .aboutme-container .avatar-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    
+    }
+
+    .aboutme-container img:first-child {
+        width: 6.4rem;
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #blobAboutMe {
+        display: none;
+    }
+
+    .aboutme-container p {
+        font-size: 0.9rem;
+    }
+
+    .aboutme-container ul li{
+        font-size: 0.9rem;
+    }
+
+    .aboutme-container .moveToRight {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+    }
+  }
